@@ -1,5 +1,6 @@
 import sys
-sys.path.insert(1, 'C:\\Users\\admin\\Documents\\RayTracing_Challenge')
+sys.path.insert(1, '..')
+#sys.path.insert(1, 'C:\\Users\\admin\\Documents\\RayTracing_Challenge')
 from vector import Vector, Point
 
 print("=====================================================")
