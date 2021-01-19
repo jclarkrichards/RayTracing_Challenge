@@ -16,7 +16,7 @@ class Vector(object):
             return "Vector<"+str(self.x)+", "+str(self.y)+", "+str(self.z)+">"
         else:
             return "Point<"+str(self.x)+", "+str(self.y)+", "+str(self.z)+">"
-            
+
     def __add__(self, other):
         return Vector(self.x+other.x, self.y+other.y, self.z+other.z, self.w+other.w)
 
