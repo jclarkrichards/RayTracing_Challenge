@@ -3,7 +3,7 @@ import sys
 sys.path.insert(1, '..')
 #sys.path.insert(1, 'C:\\Users\\admin\\Documents\\RayTracing_Challenge')
 from canvas import Canvas
-from vector import Vector, Point
+from vector import Vector
 from color import Color
 
 #pygame.init()
@@ -11,7 +11,7 @@ WIDTH, HEIGHT = (900, 550)
 c = Canvas(WIDTH, HEIGHT)
 c.initializeScreen()
 
-p = Point(0, 0, 0)
+p = Vector(0, 0, 0, 1)
 v = Vector(1, 1.8, 0)
 v = v.normalize()
 v *= 11.25

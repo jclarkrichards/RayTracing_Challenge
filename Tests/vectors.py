@@ -1,11 +1,11 @@
 import sys
 sys.path.insert(1, '..')
 #sys.path.insert(1, 'C:\\Users\\admin\\Documents\\RayTracing_Challenge')
-from vector import Vector, Point
+from vector import Vector
 
 print("=====================================================")
 print("Point")
-p = Point(4, -4, 3)
+p = Vector(4, -4, 3, 1)
 print(p)
 
 print("Vector")
@@ -15,20 +15,20 @@ print("=====================================================\n\n")
 
 print("==========================Adding=========================")
 print("Point + Vector = Point")
-a1 = Point(3, -2, 5)
+a1 = Vector(3, -2, 5, 1)
 a2 = Vector(-2, 3, 1)
 print(str(a1) + " + " + str(a2) +" = " + str(a1 + a2))
 print("=====================================================\n\n")
 
 print("=======================Subtract==========================")
 print("Point - Point = Vector")
-a1 = Point(3, 2, 1)
-a2 = Point(5, 6, 7)
+a1 = Vector(3, 2, 1, 1)
+a2 = Vector(5, 6, 7, 1)
 print(str(a1) + " - " + str(a2) +" = " + str(a1 - a2))
 print("=====================================================\n\n")
 
 print("Point - Vector = Point")
-a1 = Point(3, 2, 1)
+a1 = Vector(3, 2, 1, 1)
 a2 = Vector(5, 6, 7)
 print(str(a1) + " - " + str(a2) +" = " + str(a1 - a2))
 print("=====================================================\n\n")
@@ -41,7 +41,7 @@ print("=====================================================\n\n")
 
 print("==========================Negating=========================")
 print("Point => -Point")
-a1 = Point(3, -2, 5)
+a1 = Vector(3, -2, 5, 1)
 print(str(a1) + " => " + str(-a1))
 print("=====================================================\n\n")
 

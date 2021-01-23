@@ -2,6 +2,7 @@ import math
 
 '''
 A Vector always has w=0
+A Point always has w=1
 '''
 class Vector(object):
     def __init__(self, x, y, z, w=0):
@@ -41,7 +42,7 @@ class Vector(object):
         if abs(self.x - other.x) < self.epsilon:
             if abs(self.y - other.y) < self.epsilon:
                 if abs(self.z - other.z) < self.epsilon:
-                    if abs(self.w - other.w) << self.epsilon:
+                    if abs(self.w - other.w) < self.epsilon:
                         return True
         return False
 
@@ -69,12 +70,9 @@ class Vector(object):
                       self.x*other.y - self.y*other.x,
                       self.w)
 
+    def asTuple(self):
+        return (self.x, self.y, self.z, self.w)
+    
 
-'''
-A Point is a Vector where the w=1
-'''
-class Point(Vector):
-    def __init__(self, x, y, z):
-        Vector.__init__(self, x, y, z, 1)
 
 
