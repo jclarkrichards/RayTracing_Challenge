@@ -73,6 +73,8 @@ class Vector(object):
     def asTuple(self):
         return (self.x, self.y, self.z, self.w)
     
-
+    def reflect(self, normal):
+        '''Reflect this vector about a normal'''
+        return self - normal * 2 * self.dot(normal)
 
 
