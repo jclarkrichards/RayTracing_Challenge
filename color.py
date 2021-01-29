@@ -3,9 +3,9 @@ from vector import Vector
 '''
 Make sure color is always between 0 and 1.  Clamp the values
 '''
-class Color(Vector):
+class Color(object):
     def __init__(self, r, g, b):
-        Vector.__init__(self, r, g, b)
+        #Vector.__init__(self, r, g, b)
         self.red = min(r, 1)
         self.green = min(g, 1)
         self.blue = min(b, 1)

@@ -24,7 +24,7 @@ s = Sphere()
 S = scaling(0.5, 1, 1)
 R = rotateZ(pi/4)
 T = R * S
-s.setTransform(T)
+#s.setTransform(T)
 light = PointLight(Vector(-10, 10, -10, 1), Color(1, 1, 1))
 s.material.color = Color(1, 0, 0)
 
