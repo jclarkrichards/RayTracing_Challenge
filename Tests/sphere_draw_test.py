@@ -26,6 +26,7 @@ T = R * S
 s.setTransform(T)
 
 for y in range(WIDTH):
+    print("Working")
     world_y = half - pixel_size * y
     for x in range(WIDTH):
         world_x = -half + pixel_size * x
@@ -37,7 +38,9 @@ for y in range(WIDTH):
             r.addIntersection(t, s)
         I = r.hit()
         if I is not None:
+            print("Draw pixel")
             c.drawPixel(x, y, Color(1, 0, 0))
+print("Finished")
 
 while(True):
     c.update()

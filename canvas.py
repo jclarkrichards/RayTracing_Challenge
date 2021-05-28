@@ -21,7 +21,8 @@ class Canvas(object):
             if 0 <= y < self.height:
                 self.values[int(x), int(y)] = color
                 pygame.draw.circle(self.screen, color.color255(), (int(x), int(y)), 0)
-
+                print(color.color255())
+                
     def readPixel(self, x, y):
         return self.values[x, y]
 
